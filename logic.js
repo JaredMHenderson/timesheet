@@ -7,22 +7,12 @@ var config = {
   storageBucket: "",
   messagingSenderId: "40647403593"
   };
+
+
   firebase.initializeApp(config);
 
   let database = firebase.database();
-
-
-var employee = [{
-  name:name,
-  role:role,
-  startDate:,
-  monthsWorked:"",
-  monthlyRate:"",
-  total:""
-}];
-
-  database.ref().on("value", function(snapchat){
-    if (snapchat.child(""))
+  let ref = 
 
 
 $('#submitEmployee').on('click'(function(event) {
@@ -33,9 +23,21 @@ $('#submitEmployee').on('click'(function(event) {
     var date = $("#dateInput").val().trim();
     var rate = $("#rateInput").val().trim();
 
+    var employee = {
+      name: name,
+      role: role,
+      startDate: date,
+      rate: rate
+    };
+
+    database.ref().push(employee);
+
+    console.log(employee.name); 
+    console.log(employee.role); 
+    console.log(employee.date); 
+    console.log(employee.rate); 
+
+    alert("Employee Successfully Added");
 
 
-    });
-//change test
-});
-
+  });
