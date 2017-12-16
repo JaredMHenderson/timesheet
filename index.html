@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Latest compiled and minified CSS & JS -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" >
+        <script src="https://code.jquery.com/jquery-3.2.1.js" integrity="sha256-DZAnKJ/6XZ9si04Hgrsxu/8s717jcIzLy3oi35EouyE="
+        crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" ></script>
+        <link rel="stylesheet" type="text/css" href="./style.css">
+    <title></title>
+</head>
+<body>
+    <div class="container">
+
+
+<div class="jumbotron">
+    <div class="container" id="topDiv">
+        <h1>Employee Data Management</h1>
+        <p>A comprehensive Directory of Employee Billable Hours</p>
+    </div>
+</div>
+
+  <div class="card border-dark">
+         <h3 class="card-header">Current Employees</h3>
+             <div class="card-block">
+                    <table class="table table-striped">
+                      <thead>
+                        <tr>
+                          <th scope="col">Employee Name</th>
+                          <th scope="col">Role</th>
+                          <th scope="col">Start Date</th>
+                          <th scope="col">Months Worked</th>
+                          <th scope="col">Monthly Rate ($)</th>
+                          <th scope="col">Total Billed ($)</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row"></th>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                          <td></td>
+                        </tr>
+                      </tbody>
+                    </table>
+             </div>
+
+<div class="panel panel-default">
+
+    <form action="" method="POST" role="form">
+        <legend>Add Employee</legend>
+
+        <div class="form-group">
+            <label for="">Employee Name</label>
+            <input type="text" class="form-control" id="" placeholder="Input field">
+        </div>
+        <div class="form-group">
+            <label for="">Role</label>
+            <input type="text" class="form-control" id="" placeholder="Input field">
+        </div>
+        <div class="form-group">
+            <label for="">Start Date (DD/MM/YY- ex 01/01/89)</label>
+            <input type="text" class="form-control" id="" placeholder="Input field">
+        </div>
+        <div class="form-group">
+            <label for="">Monthly Rate</label>
+            <input type="text" class="form-control" id="" placeholder="Input field">
+        </div>
+
+
+
+
+
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+</div>
+</div>
+
+<script src="logic.js"></script>
+</body>
+</html>
