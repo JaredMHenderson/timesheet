@@ -1,13 +1,28 @@
+
 var config = {
-  apiKey: "AIzaSyCUa3OmzBQAV9MHxQg6Pgl2s5533V5qjEI",
-  authDomain: "coder-bay-fee9d.firebaseapp.com",
-  databaseURL: "https://coder-bay-fee9d.firebaseio.com",
-  storageBucket: "coder-bay-fee9d.appspot.com"
-};
+  apiKey: "AIzaSyAULNCGhM8MPwaZr01FED7PUyAQUIc5ZXo",
+  authDomain: "employee-19c37.firebaseapp.com",
+  databaseURL: "https://employee-19c37.firebaseio.com",
+  projectId: "employee-19c37",
+  storageBucket: "",
+  messagingSenderId: "40647403593"
+  };
+  firebase.initializeApp(config);
 
-firebase.initializeApp(config);
+  let database = firebase.database();
 
-// Create a variable to reference the database
-var database = firebase.database();
+  <button id=></button>
 
-var employeeArray = [];
+var employee = [{
+  name:name,
+  role:role,
+  startDate:,
+  monthsWorked:"",
+  monthlyRate:"",
+  total:""
+}];
+
+  database.ref().on("value", function(snapchat){
+    if (snapchat.child(""))
+
+  })
