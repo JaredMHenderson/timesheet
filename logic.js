@@ -7,30 +7,37 @@ var config = {
   storageBucket: "",
   messagingSenderId: "40647403593"
   };
+
+
   firebase.initializeApp(config);
 
   let database = firebase.database();
-
-// 2. Button for adding Employees
-$("#add-employee-btn").on("click", function(event) {
-  event.preventDefault();
-
-  // grabs user info 
-  var empName = $("#employee-name-input").val().trim();
-  var empRole = $("#role-input").val().trim();
-  var empStart = moment($("#start-input").val().trim(), "DD/MM/YY").format("X");
-  var empRate = $("#rate-input").val().trim();
+  let ref = 
 
 
-var newEmployee = [{
-  name:name,
-  role:role,
-  startDate:,
-  monthsWorked:"",
-  monthlyRate:"",
-  total:""
-}];
+$('#submitEmployee').on('click'(function(event) {
+    event.preventDefault();
 
-  database.ref().push((newEmployee);
+    var name = $("#nameInput").val().trim();
+    var role = $("#roleInput").val().trim();
+    var date = $("#dateInput").val().trim();
+    var rate = $("#rateInput").val().trim();
 
-  })
+    var employee = {
+      name: name,
+      role: role,
+      startDate: date,
+      rate: rate
+    };
+
+    database.ref().push(employee);
+
+    console.log(employee.name); 
+    console.log(employee.role); 
+    console.log(employee.date); 
+    console.log(employee.rate); 
+
+    alert("Employee Successfully Added");
+
+
+  });
