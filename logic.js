@@ -10,4 +10,13 @@ firebase.initializeApp(config);
 // Create a variable to reference the database
 var database = firebase.database();
 
+$('#submitEmployee').on('click'(function(event) {
+    event.preventDefault();
+
+    var name = $("#nameInput").val().trim();
+    var role = $("#roleInput").val().trim();
+    var date = $("#dateInput").val().trim();
+    var rate = $("#rateInput").val().trim();
+});
+
 var employeeArray = [];
