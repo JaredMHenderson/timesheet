@@ -32,7 +32,10 @@ $('#submitEmployee').on('click'(function(event) {
     var role = $("#roleInput").val().trim();
     var date = $("#dateInput").val().trim();
     var rate = $("#rateInput").val().trim();
-});
 
-  })
+
+
+    });
+
+});
 
