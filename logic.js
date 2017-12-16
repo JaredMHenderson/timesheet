@@ -11,9 +11,18 @@ var config = {
 
   let database = firebase.database();
 
-  <button id=></button>
+// 2. Button for adding Employees
+$("#add-employee-btn").on("click", function(event) {
+  event.preventDefault();
 
-var employee = [{
+  // grabs user info 
+  var empName = $("#employee-name-input").val().trim();
+  var empRole = $("#role-input").val().trim();
+  var empStart = moment($("#start-input").val().trim(), "DD/MM/YY").format("X");
+  var empRate = $("#rate-input").val().trim();
+
+
+var newEmployee = [{
   name:name,
   role:role,
   startDate:,
@@ -22,7 +31,6 @@ var employee = [{
   total:""
 }];
 
-  database.ref().on("value", function(snapchat){
-    if (snapchat.child(""))
+  database.ref().push((newEmployee);
 
   })
